@@ -13,7 +13,7 @@ export default {
 
 
 <template>
-
+  <div class="col-2">ciaoooo</div>
 </template>
 
 

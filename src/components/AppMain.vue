@@ -14,6 +14,7 @@ export default {
 
 <template>
 
+  <div class="text-center">ccicci</div>
 </template>
 
 
