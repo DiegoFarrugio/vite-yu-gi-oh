@@ -13,7 +13,6 @@ export default {
 
 
 <template>
-  <div class="text-center">hgbhjngbhnjk</div>
 </template>
 
 

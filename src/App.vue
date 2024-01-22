@@ -8,15 +8,18 @@ import axios from 'axios';
 export default {
   data(){
     return{
-
+        baseUrl: 'https://db.ygoprodeck.com/api/v7/cardinfo.php?num=20&offset=0',
+        characters: [],
     }
   },
 
   methods: {},
 
-  mounted(){
-    axios.get('https://db.ygoprodeck.com/api/v7/cardinfo.php?num=20&offset=0').then((response) => {
-      console.log(response);
+  created(){
+    axios.get(this.baseUrl).then((response) => {
+      console.log(response.data.data);
+      this.characters = response.data.data;
+      console.log(this.characters);
     });
   },
 
@@ -33,7 +36,7 @@ export default {
 
 <template>
   <AppHeader/>
-  <AppMain/>
+  <AppMain :allCharacters="characters"/>
   <AppFooter/>
 </template>
 

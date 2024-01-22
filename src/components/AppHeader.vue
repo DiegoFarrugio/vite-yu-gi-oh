@@ -13,7 +13,17 @@ export default {
 
 
 <template>
-  <div class="col-2">ciaoooo</div>
+  <header>
+    <div class="big-container">
+    <div class="row">
+      <div class="col">
+        <h2 class="p-2">
+          Yu-Gi-Oh Api
+        </h2>
+      </div>
+    </div>
+  </div>
+  </header>
 </template>
 
 
