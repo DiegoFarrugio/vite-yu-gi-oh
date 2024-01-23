@@ -13,15 +13,30 @@ export default {
     }
   },
 
-  methods: {},
+  methods: {
+
+    getAllarchetype(){
+            axios.get(this.store.archetypeUrl).then((response) => {
+                console.log("Archetype:",response);
+                this.store.archetypes = response.data;
+                console.log("Archetype",this.store.archetypes);
+         });
+        }
+
+  },
 
   created(){
-    axios.get(this.baseUrl).then((response) => {
+    axios.get(this.store.baseUrl).then((response) => {
       console.log(response.data.data);
       this.store.characters = response.data.data;
       console.log(this.store.characters);
     });
+
+    this.getAllarchetype()
+
   },
+
+  
 
   components: {
     AppHeader,

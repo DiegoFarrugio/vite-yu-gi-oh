@@ -1,5 +1,6 @@
 <script>
 import { store } from '../store.js';
+import axios from 'axios';
 
 
 export default {
@@ -10,10 +11,13 @@ export default {
   },
 
   props: {
-    allCharacters: Array
+    
   },
 
-  methods: {}
+  methods: {
+
+
+  }
 }
 </script>
 
