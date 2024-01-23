@@ -22,6 +22,13 @@ export default {
         </h2>
       </div>
     </div>
+    
+    <div>
+    <select class="p-2 ms-4 mt-3" name="" id="">Scegli
+      <option value="">Alien</option>
+    </select>
+  </div>
+
   </div>
   </header>
 </template>
